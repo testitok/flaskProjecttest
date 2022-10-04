@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block index_block %}
+<table class="table table-striped">
+
+{% for pic in pics %}
+
+    <td><tr><img src="static/downimg/{{ pic[0]}}.jpg" alt="{{pic[0]}}" title="{{pic[0]}}" width="244" height="361"></tr></td>
+
+{% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block index_block %}
+<div class="container">
+<table class="table table-striped">
+<tr>
+    pip
+    <td>电影中文名称</td>
+    <td>电影外文名称</td>
+    <td>评分</td>
+    <td>评论人数</td>
+    <td>电影简评</td>
+    <td>电影概述</td>
+</tr>
+    {% for item in movies %}
+<tr>
+    <td>{{item[0]}}</td>
+    <td><a href="{{item[1]}} " target="_blank">{{item[3]}}</a></td>
+    <td>{{item[4]}}</td>
+    <td>{{item[5]}}</td>
+    <td>{{item[6]}}</td>
+    <td>{{item[7]}}</td>
+    <td>{{item[8]}}</td>
+</tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block index_block %}
+
+ <div class="container-fluid bg-primary py-5 px-0" style="margin-bottom: 90px;">
+        <div class="row mx-0 align-items-center">
+            <div class="col-lg-6 px-md-5 text-center text-lg-left">
+                <h1 class="display-2 text-uppercase mb-3">豆瓣top250</h1>
+                <p class="text-dark mb-4">这只是一次爬虫加上前端展示的练习罢了，所以很简单，不要嘲笑我呀。采用python爬虫,flash框架,Echarts技术实现。</p>
+                <a href="" class="btn btn-dark text-uppercase mt-1 py-3 px-5">Learn More</a>
+            </div>
+            <div class="col-lg-6 px-0 text-right">
+                <img class="img-fluid mt-5 mt-lg-0" src="img/header.png" alt="">
+            </div>
+        </div>
+    </div>
+
+  <div class="row">
+                <div class="col-lg-3 mb-2">
+                    <a href="{{ url_for('movie') }}"><div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">电影 <span class="d-block text-body">经典电影</span></h4>
+                        <p class="m-0">这是250部顶级经典电影数据</p></div></a>
+
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <a href="{{ url_for('score') }}"><div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-code text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">评分 <span class="d-block text-body">大众评分</span></h4>
+                        <p class="m-0">抓取了网络上的评分数据</p>
+                    </div></a>
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <a href="{{ url_for('word') }}"><div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-envelope-open-text text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">电影关键词 <span class="d-block text-body">关键词</span></h4>
+                        <p class="m-0">这是电影内容高度概括，点睛之笔。</p>
+                    </div></a>
+                </div>
+                <div class="col-lg-3 mb-2">
+                    <div class="service-item rounded p-5 mb-4">
+                        <i class="fa fa-3x fa-edit text-primary mb-4"></i>
+                        <h4 class="text-uppercase mb-4">内容 <span class="d-block text-body">内容简介</span></h4>
+                        <p class="m-0">电影内容的简单介绍</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+{% endblock %}
